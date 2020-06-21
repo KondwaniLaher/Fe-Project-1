@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "appeals",
+  "info": {
+    "name": "Appeal"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Appeal_slug": {
+      "type": "integer"
+    },
+    "Appeal": {
+      "type": "integer"
+    }
+  }
+}
