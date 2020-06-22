@@ -1,20 +1,20 @@
 {
   "kind": "collectionType",
-  "collectionName": "appeals",
+  "collectionName": "weights",
   "info": {
-    "name": "Appeal"
+    "name": "Weight"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "Appeal_slug": {
+    "Weight_slug": {
       "type": "string",
       "required": true,
       "unique": true
     },
-    "Appeal": {
+    "cost": {
       "type": "integer",
       "required": true,
       "unique": true,
@@ -22,7 +22,7 @@
       "min": 1
     },
     "cars": {
-      "via": "appeal",
+      "via": "weight",
       "collection": "cars"
     }
   }

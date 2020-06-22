@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cars",
+  "info": {
+    "name": "Cars"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "appeal": {
+      "model": "appeal",
+      "via": "cars"
+    },
+    "power": {
+      "model": "power",
+      "via": "cars"
+    },
+    "quickness": {
+      "model": "quickness",
+      "via": "cars"
+    },
+    "top_speed": {
+      "model": "top-speed",
+      "via": "cars"
+    },
+    "weight": {
+      "model": "weight",
+      "via": "cars"
+    }
+  }
+}

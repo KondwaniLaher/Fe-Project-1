@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/quicknesses",
+      "handler": "quickness.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/quicknesses/count",
+      "handler": "quickness.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/quicknesses/:id",
+      "handler": "quickness.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/quicknesses",
+      "handler": "quickness.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/quicknesses/:id",
+      "handler": "quickness.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/quicknesses/:id",
+      "handler": "quickness.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

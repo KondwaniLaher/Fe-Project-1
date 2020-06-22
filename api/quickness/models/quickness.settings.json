@@ -1,20 +1,20 @@
 {
   "kind": "collectionType",
-  "collectionName": "appeals",
+  "collectionName": "quicknesses",
   "info": {
-    "name": "Appeal"
+    "name": "Quickness"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "Appeal_slug": {
+    "Quickness_slug": {
       "type": "string",
       "required": true,
       "unique": true
     },
-    "Appeal": {
+    "cost": {
       "type": "integer",
       "required": true,
       "unique": true,
@@ -22,7 +22,7 @@
       "min": 1
     },
     "cars": {
-      "via": "appeal",
+      "via": "quickness",
       "collection": "cars"
     }
   }

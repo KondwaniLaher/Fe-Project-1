@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/top-speeds",
+      "handler": "top-speed.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/top-speeds/count",
+      "handler": "top-speed.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/top-speeds/:id",
+      "handler": "top-speed.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/top-speeds",
+      "handler": "top-speed.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/top-speeds/:id",
+      "handler": "top-speed.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/top-speeds/:id",
+      "handler": "top-speed.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

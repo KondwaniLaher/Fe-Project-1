@@ -1,20 +1,20 @@
 {
   "kind": "collectionType",
-  "collectionName": "appeals",
+  "collectionName": "top_speeds",
   "info": {
-    "name": "Appeal"
+    "name": "Top_speed"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "Appeal_slug": {
+    "Top_speed_slug": {
       "type": "string",
       "required": true,
       "unique": true
     },
-    "Appeal": {
+    "cost": {
       "type": "integer",
       "required": true,
       "unique": true,
@@ -22,7 +22,7 @@
       "min": 1
     },
     "cars": {
-      "via": "appeal",
+      "via": "top_speed",
       "collection": "cars"
     }
   }
